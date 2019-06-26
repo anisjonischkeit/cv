@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+}
+
+.a4Page {
+  box-sizing: border-box; /* this sets the width/height of the box to be the width and height specified without margins/padding */
+  width: 900px;
+  height: 1272px;
+  border: 1px solid;
+  padding: 50px; /* page margin */
+}
+
+h1 {
+  margin: 0;
+  border-bottom: 1px solid;
+}
+
+.heading-hanger {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  line-height: 1.5em;
+}
+
+.links {
+  margin-top: 20px;
+}
+
+.links > div {
+  line-height: 1.5em;
+}
+
+h2 {
+  margin: 20px 0;
+  border-bottom: 1px solid;
+}
+
+ul.twoColList {
+  column-count: 2;
+}
+
+ul.threeColList {
+  column-count: 3;
+}
+
+.workExperience {
+  display: flex;
+}
+
+.workExperience > .date {
+  font-weight: bold;
+  width: 200px;
+}
+
+.workExperience > .company {
+}
+
+.workExperience > .company h3 {
+  margin: 0;
+}
+
+.workExperience > .company h4 {
+  margin: 0;
+  color: #888888ef;
+}
+
+.dividingLine {
+  height: 0px;
+  margin: 20px 0;
+  border-bottom: 1px solid;
+}
+
+@media not print {
+  .a4Page {
+    border-color: rgba(255, 0, 0, 1);
+    margin: 50px;
+    overflow: hidden;
+  }
+}
