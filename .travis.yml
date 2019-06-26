@@ -8,7 +8,7 @@ before_deploy:
 script:
   - sudo apt-get update
   - sudo apt-get install xvfb libfontconfig wkhtmltopdf
-  - xvfb-run -a -s "-screen 0 640x1050x16" wkhtmltopdf "./ cv.pdf"
+  - xvfb-run wkhtmltopdf ./ cv.pdf
 
 deploy:
   provider: releases
