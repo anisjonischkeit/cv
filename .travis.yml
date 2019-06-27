@@ -6,7 +6,7 @@ before_deploy:
   - git tag $TRAVIS_TAG
 
 script:
-  - sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+  - sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y
   - sudo apt-get update
   - sudo apt-get install xvfb libfontconfig libstdc++6
   - wget https://downloads.wkhtmltopdf.org/0.12/0.12.5/wkhtmltox_0.12.5-1.xenial_amd64.deb
