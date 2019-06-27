@@ -7,7 +7,6 @@ body {
   box-sizing: border-box; /* this sets the width/height of the box to be the width and height specified without margins/padding */
   width: 900px;
   height: 1272px;
-  border: 1px solid;
   padding: 50px; /* page margin */
 }
 
@@ -73,6 +72,7 @@ ul.threeColList {
 
 @media not print {
   .a4Page {
+    border: 1px solid;
     border-color: rgba(255, 0, 0, 1);
     margin: 50px;
     overflow: hidden;
