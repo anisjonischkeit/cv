@@ -5,9 +5,10 @@ body {
 
 .a4Page {
   box-sizing: border-box; /* this sets the width/height of the box to be the width and height specified without margins/padding */
-  width: 900px;
-  height: 1272px;
+  width: 210mm;
+  height: 297mm;
   padding: 50px; /* page margin */
+  font-size: 86%;
 }
 
 ul.competenceKeys {
@@ -42,6 +43,10 @@ ul.competenceLists li.highCompetence {
 
 ul.competenceLists li.avgCompetence {
   border-left: solid #5efc82;
+}
+
+.pageHeading {
+  margin-top: 0;
 }
 
 .skillsHeader {
