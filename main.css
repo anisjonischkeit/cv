@@ -32,16 +32,16 @@ ul.competenceKeys li:not(.competenceKey) {
 }
 
 ul.competenceLists li.vHighCompetence {
-  border-left: solid green;
+  border-left: solid #009624;
   /* vertical-align: bottom; */
 }
 
 ul.competenceLists li.highCompetence {
-  border-left: solid yellow;
+  border-left: solid #00c853;
 }
 
 ul.competenceLists li.avgCompetence {
-  border-left: solid red;
+  border-left: solid #5efc82;
 }
 
 .skillsHeader {
