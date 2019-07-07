@@ -30,9 +30,9 @@ before_install:
 
 # script: sudo ./travis-build.sh
 script:
-  - apt-get update
-  - pip3 install --upgrade setuptools
-  - pip3 install weasyprint
+  # - apt-get update
+  # - pip3 install --upgrade setuptools
+  # - pip3 install weasyprint
   - sudo weasyprint ./index.html ./cv.pdf
 
 deploy:
