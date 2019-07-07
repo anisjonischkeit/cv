@@ -28,7 +28,12 @@ before_install:
   - pip install weasyprint
   - weasyprint ./index.html ./cv.pdf
 
-script: sudo ./travis-build.sh
+# script: sudo ./travis-build.sh
+script:
+  - apt-get update
+  - pip3 install --upgrade setuptools
+  - pip3 install weasyprint
+  - sudo weasyprint ./index.html ./cv.pdf
 
 deploy:
   provider: releases
