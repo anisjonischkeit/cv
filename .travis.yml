@@ -24,7 +24,7 @@ before_install:
   # Pango 1.38+ is needed to make @font-face work, remove these two lines when it's available on Travis
   - mkdir -p ~/.fonts
   - wget "https://github.com/Kozea/Ahem/blob/master/Ahem.ttf?raw=true" -O ~/.fonts/Ahem.ttf
-  - $PYTHON -m pip install --upgrade pip setuptools
+  - $PYTHON -m pip install --upgrade pip setuptools pango
   - pip install weasyprint
   # - weasyprint ./index.html ./cv.pdf
 
