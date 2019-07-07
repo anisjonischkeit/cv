@@ -130,3 +130,8 @@ ul.threeColList {
     overflow: hidden;
   }
 }
+
+@page {
+  size: a4 portrait; /* Change from the default size of A4 */
+  margin: 0mm; /* Set margin on each page */
+}
