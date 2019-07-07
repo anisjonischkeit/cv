@@ -12,4 +12,4 @@ pip3 install weasyprint
 # sudo chown _apt wkhtmltox_0.12.5-1.xenial_amd64.deb
 # sudo apt install ./wkhtmltox_0.12.5-1.xenial_amd64.deb
 # xvfb-run wkhtmltopdf ./index.html cv.pdf
-weasyprint ./index.html ./cv.pdf
+sudo weasyprint ./index.html ./cv.pdf
