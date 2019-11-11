@@ -1,17 +1,8 @@
-language: python
+language: node_js
 # sudo: false
-env: PYTHON=python
 
 os:
   - linux
-
-python:
-  - "3.5"
-
-addons:
-  apt:
-    packages:
-      - ttf-dejavu
 
 before_deploy:
   - git config --local user.name "Deploy Bot"
@@ -20,26 +11,16 @@ before_deploy:
     -1)}
   - git tag $TRAVIS_TAG
 
-before_install:
-  # Pango 1.38+ is needed to make @font-face work, remove these two lines when it's available on Travis
-  - mkdir -p ~/.fonts
-  - wget "https://github.com/Kozea/Ahem/blob/master/Ahem.ttf?raw=true" -O ~/.fonts/Ahem.ttf
-  - $PYTHON -m pip install --upgrade pip setuptools
-  - pip install weasyprint
-  # - weasyprint ./index.html ./cv.pdf
-
-# script: sudo ./travis-build.sh
 script:
-  # - apt-get update
-  # - pip3 install --upgrade setuptools
-  # - pip3 install weasyprint
-  - weasyprint ./index.html ./cv.pdf
+  - cd pdf-export
+  - npm install
+  - npm start
 
 deploy:
   provider: releases
   api_key:
     secure: BekLt7m1CNLqBTHo8no0J/qiwSe5f99C9wYTJ/Y+MIEp/wEevWWSat3HiRVdj/MnMvSqgoUGuVueHurb3Ebm4BPaI2I7OUVaIUuY4Gmyh4UCp20/iUJSbJaqpDsGqJPTez4imsjafMPCPv1hjQW22vmDynJNuw3vaXvk+E73KqSfgydSdGyk0I7WoQbEBceM70apd5NqE5igcBLVlvm0kBMpQqmD4dnJApu4UPs43mP/580T00hB132Q7ujov5yayPipBlj3AQe0O1gP51aU1XpLDhIZwiZdLx9a7aC+eNP8n232iRpR8gQwikbk/xz/SjqHZYJ9WLFfGKjTvNXDtYSBh1X6aKf94v9NnnNFpW68dcaw+6/F6MzUvdoRmf9ZQ9sXdfwVaZj4ujXtg5VGqS6+ynl9PkLgiidCe+lbNOzkZ7nU/6mqF9gVkoS9Zl2auRFZspH2jok63W601K9ytVMAEQ0u6YzE+ZmrX5uaNpi0qmp/AISliPAqZNyyUUXLkmzppY/5MxOrD4wnjFufutjEIig07trbd7CfFwt+ceItMRgiWRdeIzHsirJt1Y+nQToZ2MwqU/H32cIqHVE5Pi/WTVUtWehgOlxatJVWoPqCdm6LcJWiholKAHtFUgJX5JARE1+BfrPTqbChl1xcF2mB6qPE9c1AJKdfjrSLmkE=
-  file: ./cv.pdf
+  file: ./pdf-export/cv.pdf
   skip_cleanup: true
   on:
     repo: anisjonischkeit/cv
