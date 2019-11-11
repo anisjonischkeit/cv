@@ -1,8 +1,8 @@
 on:
   push:
     paths:
-      - "**/*.html"
-      - "**/*.css"
+      - "*.html"
+      - "*.css"
 
 name: Create Release
 
