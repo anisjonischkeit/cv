@@ -14,7 +14,7 @@ jobs:
           cd pdf-export
           npm install
           npm start
-          echo "::set-env name=RELEASE_TAG::-$(date +'%Y.%m.%d_%H.%M.%S')-$(git log --format=%h-1)"
+          echo "::set-env name=RELEASE_TAG::$(date +'%Y.%m.%d_%H.%M.%S')-$(git rev-parse --short HEAD)"
           echo "::set-env name=RELEASE_NAME::$TAG"
       - name: Create Release
         id: create_release
