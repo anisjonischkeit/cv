@@ -14,12 +14,13 @@ jobs:
           cd pdf-export
           npm install
           npm start
+          export RELEASE_TAG=${RELEASE_TAG:-$(date +'%Y.%m.%d_%H.%M.%S')-$(git log --format=%h
+          export RELEASE_NAME=${RELEASE_NAME:-$(date +'%Y.%m.%d_%H.%M.%S')-$(git log --format=%h
+    -1)}
       - name: Create Release
         id: create_release
         uses: meeDamian/github-release@1.0
         with:
           token: ${{secrets.GITHUB_TOKEN}}
-          tag: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
           files: pdf-export/cv.pdf
           gzip: false
