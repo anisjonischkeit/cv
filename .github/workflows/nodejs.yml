@@ -19,8 +19,8 @@ jobs:
         id: create_release
         uses: meeDamian/github-release@1.0
         with:
-          name: ${{env.TAG}}
-          tag: ${{env.TAG}}
+          name: ${{$TAG}}
+          tag: ${{$TAG}}
           token: ${{secrets.GITHUB_TOKEN}}
           files: pdf-export/cv.pdf
           gzip: false
