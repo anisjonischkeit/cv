@@ -3,7 +3,7 @@ on:
     paths:
       - "*.html"
       - "*.css"
-      - ".github/workflows/*
+      - ".github/workflows/*"
 
 name: Create Release
 
