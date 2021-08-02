@@ -15,8 +15,8 @@ jobs:
         uses: actions/checkout@master
       - name: Set enviroment for github-release
         run: |
-          echo "::set-env name=RELEASE_TAG::$(date +'%Y.%m.%d_%H.%M.%S')-$(git rev-parse --short HEAD)"
-          echo "::set-env name=RELEASE_NAME::$TAG"
+          echo "name=RELEASE_TAG::$(date +'%Y.%m.%d_%H.%M.%S')-$(git rev-parse --short HEAD)" >> $GITHUB_ENV
+          echo "name=RELEASE_NAME::$TAG" >> $GITHUB_ENV
       - name: Export PDF
         run: |
           cd pdf-export
