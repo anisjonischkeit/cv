@@ -3,6 +3,10 @@ body {
   font-family: Helvetica, sans-serif;
 }
 
+li {
+  padding-bottom: 4px;
+}
+
 .a4Page {
   box-sizing: border-box; /* this sets the width/height of the box to be the width and height specified without margins/padding */
   width: 210mm;
@@ -24,25 +28,49 @@ ul.competenceKeys {
   padding: 5px;
 }
 
-ul.competenceLists li {
-  padding: 0 5px;
+ul.competenceLists {
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 6px
+
+}
+ul.competenceLists li h4 {
+  display: block;
+  margin: 0;
+  margin-bottom: 8px;
+  border-bottom: 1px solid black
+
+}
+ul.competenceLists li strong {
+  font-weight: bold;
+  color: #212121;
 }
 
+ul.competenceLists li {
+  padding: 0 5px;
+  border-left: 4px solid;
+  /* justify-content: center; */
+  padding-bottom: 6px
+  
+}
 ul.competenceKeys li:not(.competenceKey) {
   margin-left: 20px;
 }
 
 ul.competenceLists li.vHighCompetence {
-  border-left: solid #009624;
+  border-color: #009624;
   /* vertical-align: bottom; */
+  /* background-color: red; */
 }
 
 ul.competenceLists li.highCompetence {
-  border-left: solid #00c853;
+  border-color: #00c853;
 }
 
 ul.competenceLists li.avgCompetence {
-  border-left: solid #5efc82;
+  border-color: #5efc82;
 }
 
 .pageHeading {
