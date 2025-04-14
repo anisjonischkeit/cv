@@ -6,9 +6,7 @@
     <div class="a4Page">
       <h1>Anis Jonischkeit</h1>
       <div class="heading-hanger">
-        <div>
-          Senior Fullstack Developer (Platform Team) - Origin Energy
-        </div>
+        <div>Senior Software Engineer (App Platform Team) - Origin Energy</div>
         <div>anis.jonischkeit@gmail.com</div>
       </div>
 
@@ -30,12 +28,257 @@
       <h2>Personal Summary</h2>
       <p>
         I am a Software Engineer with a keen interested and curiosity for all
-        things computing. While my specialisation is in Web Technologies, the 
-        breadth of my experience allows me to both take full advantage of what 
-        browsers are capable of, as well as building the complimentary systems/
-        tooling to handle what browsers alone can't.
+        things computing. My specialisation is in Web Technologies, with the
+        breadth of my experience allowing me to take full advantage of what
+        browsers and the modern web are capable of. I love working with teams
+        and figuring out how to remove friction, foster collaboration and 
+        build impactful software.
       </p>
 
+      <h2>Recent Professional Highlights</h2>
+
+      <div class="workExperience">
+        <div class="date">08.2021 - present</div>
+        <div class="company">
+          <h3>Origin Energy</h3>
+          <h4>Senior Software Engineer - App Platform Team (Contract)</h4>
+        </div>
+      </div>
+
+      <p>
+        While at Origin I worked on a wide variety of projects all across our stack.
+        Our team's purpose was to find where we can impact multiple teams, or a large
+        chunk of the site in order to meaningfully increase productivity, remove recurring
+        overhead, unify the customer experience, improve performance, manage the interactions
+        between the website (served in a webview) and the native app and guide the front-end
+        technical direction of the company. I also worked on a handfull of customer facing 
+        projects, which allowed me to actually experience the impact of my work on end users. 
+        Some key projects I worked on include:
+      </p>
+      <ul>
+      <li>
+        I designed and am currently leading the implementation of a major site-wide performance and UX uplift, leveraging client side routing, bundle and
+        data pre-loading, optimistic and stale UIs and caching that
+        we estimate will more than half our average page load times on
+        our highest trafficked and slowest pages. It also opens a pathway to React 19 and allows us to do a step
+        change from our current systems, keeping our microfrontend architecture, automating large parts of the migration and delivering incremental benefits.
+      </li>
+        <li>
+          I lead Origin's adoption of Storybook as well as Interaction and Accesibility 
+          Testing to enable more robust testing with less overhead, higher confidence,
+          and faster feedback loops.
+        </li>
+        <li>
+          I lead the effort to uplift Origin's Core Frontend Platform to the latest
+          versions of core frontend dependencies like React, Material UI and Webpack.
+          This included updating our runtime platform to support incremental updates
+          of parts of the site and managed and supported the rollout of these changes
+          across the organisation.
+        </li>
+        <li>
+          I uplifted Origin's Design System (150+ Component) to the latest
+          Material UI, TypeScript, Styled Components, Babel, etc, with 0 UI
+          regressions, simplifying the build and development process, and
+          rallying together a core group of contributers to get some life,
+          pride, and momentum back into this central but neglected project. I
+          took it from 0 commits in the previous 6 months to getting multiple
+          contributions from across the company merged to master every week.
+        </li>
+        <li>
+          I created Origin's solution for embedding content blocks from wordpress
+          into React frontends allowing content authors to reuse existing systems 
+          and make content changes in react apps, without developer effort
+        </li>
+        <!--
+        <li>
+          Proposed solutions for setting up the future of Origin's frontend platform,
+          leveraging my breadth of knowledge on our internal technologies to find
+          solutions that we can move to without major effort from dev teams and while
+          delivering incremental value along the way. 
+        </li>
+-->
+        <li>I lead the design system team to update and rollout a major brand refresh project</li>
+        <li>I uplifted CI pipelines enabling faster feedback loops with issues detected earlier</li> 
+        <li>I built Core experiences like Search and the Home Page</li>
+        <li>I built a Pre Render service to improve SEO and allow for site auditability over time</li>
+        <li>I setup monitoring for frontends to get an indication of and monitor which
+          experiences needed to be improved</li>
+        <li>
+          Setup a Backstage instance to pull together our tooling and documentation 
+          into one place and allow a user to view ownership and application's risk
+          profiles, deployment history and other useful information.
+        </li>
+      </ul>
+
+      <h3>Technologies Used</h3>
+      <ul class="threeColList">
+        <li>Javascript, Typescript, Node, Bash, Java, PHP, Groovy</li>
+        <li>React, Material UI, Styled Components, React Router 7 (Remix)</li>
+        <li>Webpack, Babel, Vite, CoreJS</li>
+        <li>Storybook, Playwright, Puppeteer, Axe, Jest, Applitools, Chromatic</li>
+        <li>Backstage</li>
+        <li>Nginx, Docker, Compose, ECS</li>
+        <li>Microfrontend Architectures</li>
+        <li>Jenkins CI Pipelines</li>
+        <li>New Relic</li>
+        <li>AWS (CloudFront, S3, CloudFormation, Lambda)</li>
+      </ul>
+
+<!--
+        <li>
+          I added support to allow developers and testers to point at any CI
+          build of a site and have that build served to them. This was a simple
+          solution that has alleviated the issue of not having enough live
+          environments to test on.
+        </li>
+        <li>
+          I Built a Pre-render service to render static html from client side
+          rendered react apps to help with SEO on apps that were not able to be
+          SSR. This solution was later re-used to feed content from our site to
+          our search, and to populate an audit trail for the site.
+        </li>
+      </ul>
+      <p>
+        Another way in which I empowered the development teams is by taking on
+        the mammoth task of taking our existing microfrontend architecture and
+        our internal libraries (which hadn't dealt with updating shared
+        dependencies and the web of missmatched verstions that it creates) and
+        working out and executing a plan to facilitate incrementally updating
+        microfrontends. This work included:
+      </p>
+      <ul>
+      </ul>
+      <p>
+        None of this work could be done without the platform team's house also
+        being in order. As such I also spent significant effort in solving the
+        issues that stopped our team from rapidly delivering. This was achieved
+        by:
+      </p>
+      <ul>
+        <li>
+          Majorly simplifying the setup of our frontend platform (TAL) so that
+          it is now possible to run TAL locally, pointing at resources from
+          either a live or local environment, leading to rapid iteration as we
+          could now hot reload the platform, point it at actual live sites and
+          validate how changes take effect.
+        </li>
+        <li>
+          Leaning on existing tooling where people in the past had built
+          in-house solutions. Some of these solutions were necessary in the
+          past, and others came out of taking on more responsibility than the
+          size of the team allowed. Often times, with enough time and
+          understanding of the requirements, large chunks of our system could
+          just be removed.
+        </li>
+        <li>
+          Building tooling to allow searching and bulk raising PRs across
+          BitBucket and Github so when we needed to understand things or make
+          bulk updates across repos, we could easily do so
+        </li>
+        <li>
+          Running experiments and building POCs on different approaches to
+          leverage our existing architecture to achieve things that were thought
+          by many to be impossible without large re-writes
+        </li>
+      </ul>
+      -->
+
+      <!--
+      <p>
+        The existing microfront architecture had gotten stuck due to shared
+        dependency issues and this was an issue that was ign cognitive overhead
+        during development that were previously not possible a bunch of mission
+        critical projects had been left to rot, and I would go into these
+        projects, figure out what the issues where and why people didn't want to
+        work on them (or felt like they couldn't). I would then create a plan
+        and fix these issues, identify the people with a passion for the kind of
+        work along the way and upskill and guide them so they could take over
+        the project as I move on
+      </p>
+
+      <h3>Technological Achievemnts</h3>
+      <p>
+        During My time at Origin Energy, I took a number of highly impactful
+        projects from ideation through to completion. From bringing our design
+        system back from a state of abandonware to an active project with
+        multiple contributers across the organisation, to working out upgrade
+        pathways for our micro-frontend architecture and the ~100 apps that run
+        within it and guiding the different teams through these processes. I was
+        the subject matter expert in multiple domains and a key driver in
+        pushing the organisation into adopting technologies and processes
+        applicable to the organisation's size and culture, emphasizing
+        simplicity of development and user delight
+      </p>
+      <p>
+        My work at Origin consisted primarily of research into solutions for
+        problems without obvious solutions, building proof of concepts, and then
+        creating a plan and adoption strategy and then implementing or guiding
+        the implementation of these solutions. In previous jobs I also did a lot
+        of product work, so I understand the issues that slow down and frustrate
+        developers, and I'm passionate about solving these with solutions guided
+        by customer experiences
+      </p>
+
+      <h3>Business Achievements</h3>
+      <p>
+        While at Origin I took on the task of updating our Design System to the
+        latest versions of its dependencies, and the platform to support
+        incrementally updating microsites within it. This project had many
+        challenges that were thought to be impossible and I had a lot of
+        resistance to undertaking this work as it was thought to be unachievable
+        and we could just keep doing what we are doing now. Despite this, I saw
+        how important this work was and pushed hard to let the project go
+        through. I put together proofs of my approach and created a strategy for
+        the upgrade plan. As the project was coming to completion the first team
+        came up against blockers in their project that meant they couldn't run
+        on the old tech, and felt there was no choice but to opt out of our
+        platform and design system. Due to my work they could continue to stay
+        on the same platform as everyone else.
+      </p>
+      <p>
+        6 months later a large amount of teams have updated their app to the
+        latest tools without issues and there is now a major UI and APP uplift
+        project that can take place within the existing system. The UI uplift
+        will mean that we build a massive amount of new components, and without
+        my work, we would have had to make a choice of whether we write these
+        components using now unsupported technology, whether we take on the UI
+        upgrade now (which no-one thought was possible), or whether we throw out
+        the old system and start again. My work has saved months of time towards
+        these uplift projects, stopped projects from splitting out into their
+        own ecosystems, and proven that we can uplift and iterate on our systems
+        rather than constantly re-writing things. It's brought rapid iteration
+        back to the project and opened oportunities for building user
+        experiences that were not possible prior.
+      </p>
+      <h3>Leadership and Culture Achievements</h3>
+      <p>
+        When I was at News UK, I started as a Senior Developer and quickly
+        became the lead of my squad. This Leadership experience was more of a
+        traditional team/tech lead role, where I would liase with the other
+        teams/leads to be able to integrate what we work on with what the other
+        teams worked on.
+      </p>
+      <p>
+        At Origin my leadership was far less formalised. I had the trust from my
+        manager and the team to do a lot more movement between teams and
+        projects. A bunch of mission critical projects had been left to rot, and
+        I would go into these projects, figure out what the issues where in the
+        projects and why people didn't want to work on them (or felt like they
+        couldn't). I would then create a plan and fix these issues up until
+        people could again see a future and get excited about the project. As
+        momentum comes back into the project, I would be looking for and guiding
+        a suitable leader to replace me, so I could step back and take on more
+        of an advisory role where needed.
+      </p>
+      <p>
+        Having had my hands on nearly every part of Origin's codebase, I am now
+        regularily asked for guidance on all sorts of projects with half of my
+        time spent in an advisory capacity
+      </p>
+      -->
+    </div>
+
+    <div class="a4Page">
       <div class="skillsHeader">
         <h2>Skills</h2>
         <span>
@@ -49,25 +292,27 @@
 
       <ul class="threeColList competenceLists">
         <li class="vHighCompetence">
-          <h4>Frontend Programming</h4> JavaScript, <strong>TypeScript</strong>, ESNext,
-          <strong>React</strong>, SSR, Redux, Astro, Material UI, Elm, ReasonReact
+          <h4>Frontend Programming</h4>
+          JavaScript, <strong>TypeScript</strong>, ESNext,
+          <strong>React</strong>, SSR, Redux, Astro, Material UI, Elm,
+          ReasonReact
         </li>
         <li class="vHighCompetence">
-          <h4>Web Browsers</h4>Event Loop, Render/Task Queues, Web
-          APIs
+          <h4>Browser Technologies</h4>
+          Event Loop, Render/Task Queues, Network Optimisation
         </li>
-        
+
         <li class="vHighCompetence">
           <h4>Frontend Layout/Styling</h4> HTML, <strong>Modern CSS</strong>,
           Responsiveness, <strong>Mobile Experience/Feel</strong>, Positioning
         </li>
 
         <li class="vHighCompetence">
-          <h4>Frontend Building & Tooling</h4><strong>Webpack</strong>, Vite, <strong>Babel</strong>, 
-          core-js, Bundle Optimisation, <strong>Monorepos</strong>, <strong>Applitools</strong>, Playwright
+          <h4>Frontend Builds & Tooling</h4><strong>Vite</strong>, Webpack, <strong>Babel</strong>, 
+          core-js, Bundle Optimisation, <strong>Monorepos</strong>, <strong>Applitools</strong>, Playwright, <strong>Storybook</strong>
         </li>
 
-      
+
         <li class="vHighCompetence">
           <h4>Frontend Architecture</h4> <strong>Micro Frontend Architectures</strong>, Single Page Apps, Multipage Apps, Mixed Rendered Architectures
         </li>
@@ -95,7 +340,7 @@
           <h4>Development Practices</h4> <strong>Functional Programming</strong>, Test Driven Development, <strong>Property Based Testing</strong>
         </li>
         </li>
-            <li class="vHighCompetence">
+            <li class="highCompetence">
           <h4>Oporational Practices</h4> 
                   Continuous Integration/Delivery/ Deployment, <strong>Canary Releases</strong>,  <strong>Infrastructure as Code</strong>, Git
         </li>
@@ -105,109 +350,10 @@
         </li>
       </ul>
 
-      <h2>Professional Highlights</h2>
-      <ul>
-        <li>Architected and built out a solution that resolved a 4 year long company wide blocker on dependancy updates, allowing all of Origin's microsites to incrementally update to the latest versions of major dependancies. 
-        <li>Created proof of concepts and Implemented a solution to allow embedding complete wordpress UIs within React Microsites without compromising on user experience and creating clashes</li>
-        <li>Uplifted Origin's Design System (150+ Component) to the latest Material UI (and TypeScript, Styled Components, Babel, etc) with 0 UI regressions*, and rallied together a core group of contributers to get some excitement/pride/life back into this central, yet neglected project</li>
-        <li>Built a proof of concept for a "Native App Experience, On The Web", sticking with our existing multipage architecture and adding cross page transitioning and optimistic content preloading, to give a mobile feel across the entire site.</li>
-        <li>Setup custom build configurations for monorepos to allow incompatible dependencies to run together</li>
-        <li>Built a backstage instance to give visibility on Origin's applications, including aggregating documentation, ownership, security auditing, dependancies, monitoring deployment histories, routing information and a bunch of other useful information</li>
-        <li>Lead the design and development of News UK's Web Fulfilment Platform (Go, MySQL, DynamoDB)</li>
-        <li>Built generic and composable UI components for Flight Centre's booking engine and Origin's Design System</li>
-        <li>Built Imagus Technology's Facial Recognition Web UI (React, Redux, Flow, Canvas)</li>
-      </ul>
-
-      <div class="workExperience">
-        <div class="company">
-          <h3>Bachelor of Information Technology - Griffith University</h3>
-          <h4 style="font-weight: normal;">Majoring in Intelligent Systems</h4>
-        </div>
-      </div>
-    </div>
-    <div class="a4Page">
-      <h2 class="pageHeading">Most Recent Work Experience</h2>
-
-      <div class="workExperience">
-        <div class="date">08.2021 - Present</div>
-        <div class="company">
-          <h3>Origin Energy</h3>
-          <h4>Senior Fullstack Developer - Platform Team</h4>
-        </div>
-      </div>
-      <p>
-        Throughout my time at Origin I worked on just about every aspect of the frontend.
-        I was one of two developers that worked full time on the Frontend Platform
-        and Tooling for Origin's React ecosystem. The Goal of the platform team is
-        to identify and handle common and shared functionality for our frontends. This
-        Includes managing the synergy between the different React apps, the mobile app,
-        Wordpress pages, making it all feel as if it's "a single experience".
-        Below are some projects I worked on while there:
-      </p>
-      <ul>
-        <li>
-          I setup infrastructure and pathways to allow upgrading Origin's core React
-          dependencies across all microsites. Microsites had been forced to run on old 
-          versions of React/Material UI/Styled Components/Webpack/etc, some that were up to
-          5 years outdated prior to me taking on this project. Since the platform ran multiple React
-          apps on the same page, it externalises certain dependancies as having two versions
-          often caused issues. My work allowed for multiple versions of these core dependencies
-          to run in harmony and was the crucial step in enabling upgrade pathways for our microsites.  
-        </li>
-        <li>
-          I ran experiments and implemented a solution to allow seemlessly
-          embedding wordpress UIs (authored by content people) into react apps
-        </li>
-        <li>
-          I built out a proof of concept for a generic approach to cross page
-          client side routing, pre-fetching, and client side ahead of time
-          rendering to make the site "feel" like a native app, and to
-          overcome speed issues in upstream providers' services. Learnings from
-          this POC have heavily influenced the technical direction for the development
-          of Origin's new Mobile Application
-        </li>
-        <li>
-          I built a pre-rendering service for SEO bots to be able to get more
-          information out of client side rendered applications. This service was later
-          also leveraged to feed more data into our Search Experience
-        </li>
-        <li>
-          I uplifted the Origin Design System (Component Library) to the latest
-          major dependencies (MUI, React, Typescript, Babel, etc) and provided a 
-          migration path that allows most microsites to upgrade with very little 
-          effort. The library is used by over 100 apps, contains
-          around 150 reusable UI components that were 2 - 5
-          years outdated, and was updated with almost 0 visual regression. The project 
-          has brought new life, excitement and momentum to our Design System, and a wave 
-          of optimism around our ability to iterate on it. 
-        </li>
-        <li>
-          I Built out a Backstage services that allows for a single entrypoint
-          into all of our projects. This includes aggregating, building and hosting our applications'
-          documentation, deployment history, ownership, security risk profile, routing information, 
-          dependency graphs, monitoring and more
-        </li>
-        <li>Implemented custom UIs from designs for the new homepage and search experience</li>
-      </ul>
-
-      <h3>Technologies Used</h3>
-      <ul class="threeColList">
-        <li>Javascript, Typescript</li>
-        <li>React, Material UI, Styled Components</li>
-        <li>Webpack, Babel, Vite, CoreJS, Applitools</li>
-        <li>Node, Lambda, ECS</li>
-        <li>Backstage</li>
-        <li>NGINX</li>
-        <li>Playwright, Puppeteer</li>
-        <li>Docker, Compose, ECS</li>
-        <li>Microfrontend Architectures</li>
-        <li>CI Pipelines</li>
-        <li>New Relic</li>
-        <li>AWS (CloudFront, S3, CloudFormation, Lambda)</li>
-
-      </ul>
-
-
+      <br />
+      <br />
+      <h2 class="pageHeading">Previous Employment History</h2>
+      <p><strong>The below section outlines my work history, prior to my work at Origin Energy (which is outlined on the previous page)</strong></p>
 
       <div class="dividingLine"></div>
 
@@ -257,6 +403,27 @@
           split out into microservices
         </li>
       </ul>
+
+      <h3>Technologies Used</h3>
+      <ul class="threeColList">
+        <li>Go</li>
+        <li>Javascript (AWS Lambda)</li>
+        <li>MySQL (AWS RDS Aurora)</li>
+        <li>NoSQL (AWS DynamoDB)</li>
+        <li>Terraform</li>
+        <li>Docker</li>
+        <li>Microservice Architectures</li>
+        <li>Test Driven Development</li>
+        <li>Continuous Deployment</li>
+        <li>Datadog/New Relic</li>
+        <li>CircleCI</li>
+        <li>Stripe</li>
+        <li>Auth0</li>
+      </ul>
+
+    </div>
+
+
 <!--
       <h3>Technologies Used</h3>
       <ul class="threeColList">
@@ -275,9 +442,7 @@
         <li>Auth0</li>
       </ul>
 -->
-    </div>
     <div class="a4Page">
-      <div class="dividingLine"></div>
       <div class="workExperience">
         <div class="date">05.2018 - 02.2019</div>
         <div class="company">
